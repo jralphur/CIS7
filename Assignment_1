@@ -1,1 +1,58 @@
+#35: outputs 1.0, 5.1, 2.4
+C++ code that follows the pseudocode in the book:
+#include <iostream>
+#include <cmath>
+
+int
+main(void)
+{
+    double x;
+    for (int i = 1; i <= 5; ++i) {
+        std::cin >> x;
+        if (((x < 5.0) && (2 * x < 10.7)) || sqrt( 5 * x ) < 5.1)
+            std::cout << x;
+    }
+}
+
+#37: if (not(Value 1 < Value2))  then
+	... rest of the function here
+
+#38: Yes:
+    A: false; B: false; C: true
+    ((A ^ B)' ^ C) -> statement1 if true
+    statement 2 if false
+    (A ^ B)' evaluates to true
+    ^ C does not change the truth value;
+    statement 1 then executes since the whole if statement is true.
+
+
+#61 "At least one of us is a liar."
+    If Perceival is a liar, then his statement is false.  If his statement is negated, then both characters
+	should be truth tellers, leading to an impossible situation considering
+	that Percival is a liar.
+	Since it leads into an impossible situation and the characters are or are not liars,
+    Percival is telling the truth, making LLewellyn a liar.
+
+#62: "If I am a truth teller, then Meredith is a truth teller." 
+    If Merelin was lying, then his (negated) statement would be:
+	"I am telling the truth and Meredith is a liar", but since Merlin
+	is lying, this is an impossible situation.
+	Therefore Merlin must be a truth teller.
+    Since Merlin is a truth teller, then Meredith must also be a truth teller.
+
+#63:"Either I am a liar or Grymlin is truth teller."
+    Let us assume that Rothwold is lying, a lie statement would be:
+    A' ^ B'
+	"I am telling the truth and Grymlin is lying".
+	But since Rothwold is lying, this statement is impossible.
+	Rothwold must then be a truth teller.
+	Since Rothwold is truthteller, we can assume that Grymlin is a truth teller since he is not a liar
+
+#64 "I am a liar but Merrilaine is not."
+	If Gwendolin is telling the truth, then she is a liar and Merrilaine is a truthteller; however,
+    this leads to an impossibility: Gwedolin says she is a liar despite being a truth teller.
+    Therefore, she must also be a liar and her combined statement A^B (A: "I am a liar" & B: "Merrilaine is telling the truth") is false.
+	Gwendolin AND Merrilaine must be liars.
+	
+	
 
