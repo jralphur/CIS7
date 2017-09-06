@@ -1,4 +1,4 @@
-#35: outputs 1.0, 5.1, 2.4
+#35: outputs 1.0, 5.1, 2.4 7.2
 C++ code that follows the pseudocode in the book:
 #include <iostream>
 #include <cmath>
