@@ -2,9 +2,10 @@
 We must show that (p->q) -> (q' -> p') and (q' -> p') -> (p->q)
 Through deduction method the argument is changed:
     (p -> q) ^ q' -> p'
+    and
     (q' -> p') ^ p -> q
 It is now only necessary to prove p' and q.
-Through modus tollens, these two statements are equivalent.
+Through modus tollens (p -> q), q' and (p' -> p'), p, these two statements are equivalent.
 
 # Show that (p->r) ^ (q->r) <=> (p v q) -> r
 
@@ -15,7 +16,7 @@ Through modus tollens, these two statements are equivalent.
 5. (p v q) -> r, de morgan
 
 
-A' ^ (A V B) -> B
+A' ^ (A v B) -> B
 P ^ P' -> Q
 
 
