@@ -1,0 +1,24 @@
+# Show that p->q and q' -> p' is logically equivalent
+We must show that (p->q) -> (q' -> p') and (q' -> p') -> (p->q)
+Through deduction method the argument is changed:
+    (p -> q) ^ q' -> p'
+    (q' -> p') ^ p -> q
+It is now only necessary to prove p' and q.
+Through modus tollens, these two statements are equivalent.
+
+# Show that (p->r) ^ (q->r) <=> (p v q) -> r
+
+1. (p->r) ^ (q->r) (hyp)
+2. (p' v r) ^ (q' v r) 1, implication x2
+3. r v (p' ^ q'), 2, distributive
+4. (p v q)' v r, associative, de morgan
+5. (p v q) -> r, de morgan
+
+
+A' ^ (A V B) -> B
+P ^ P' -> Q
+
+
+
+
+
