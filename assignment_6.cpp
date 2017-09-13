@@ -18,6 +18,6 @@ main(void)
         std::cin.ignore();
         std::getline(std::cin, buf);
     } while (!buf.empty() && buf[0] != 'q');
-    return 0;
 
+    return 0;
 }
