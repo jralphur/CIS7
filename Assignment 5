@@ -1,0 +1,19 @@
+(∀x)(S(x) -> I(x))
+(∃x)(I(x) ^ S(x) ^ M(x))
+(∀x)(M(x) -> (I(x)' ^ S(x)))
+(∀x((M(x) -> (I(x) ^ S(x)))))
+
+
+John is handsome and Kathy loves John.
+For all people, if it is a man, then he is handsome.
+For all people, if it a woman and for all people she loves another, then he must be a handsome man,
+There is a person who is a handsome man that loves Kathy.
+There is a pretty woman that if loves someone, then he must be a male and handsome.
+For all people if she is a woman and pretty, then John loves her.
+
+a. There A(x) = x is even; B(x) = x is odd
+b. P(x,y) = y is a x
+c. P(x) = P(x) is an apple, Q(x) = it is a fruit
+d. A(x) x is pizza
+
+
