@@ -1,0 +1,36 @@
+exhaustive method:
+    25: 5 * 5; 16 + 9
+    100: 10 * 10; 25 + 4;
+    169: 13 * 13; 0 + 169;
+
+let x be odd, expressed as (2n + 1)
+let y be odd, expressed as (2n + 1);
+x + y is then (2n + 1) + (2n + 1)
+which equals 4n + 2
+which equals 2(2n + 1)
+let 2n + 1 be k
+then, 2k 
+therefore x + y is even
+alternatively, since (2n + 1) is being multiplied by two, 2 * (2n + 1) is even;
+
+
+sum of even x and x^2 is even
+hyp: x + x^2 = even number
+= (2n) + (2n)^2 
+= 2n + 4n^2
+= 4n^2 + 2n
+= 2(n^2 + 2)
+= let k = n^2 + 2
+therefore 2k, and 2k is even
+
+if n^2 is odd -> n is odd;
+if n is even, then n^2 is even
+let x be an even number; 2n
+then x^2 equates to  4n^2
+which then equates to 2(2n^2)
+let k be the integer 2n^2
+then, 2k which is even.
+by contraposition, if n squared is odd, then n is also odd.
+
+
+
