@@ -1,7 +1,7 @@
 exhaustive method:
     25: 5 * 5; 16 + 9
     100: 10 * 10; 25 + 4;
-    169: 13 * 13; 0 + 169;
+    169: 13 * 13; 25 + 144;
 
 let x be odd, expressed as (2n + 1)
 let y be odd, expressed as (2n + 1);
