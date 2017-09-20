@@ -24,13 +24,10 @@ hyp: x + x^2 = even number
 therefore 2k, and 2k is even
 
 if n^2 is odd -> n is odd;
-if n is even, then n^2 is even
-let x be an even number; 2n
-then x^2 equates to  4n^2
-which then equates to 2(2n^2)
-let k be the integer 2n^2
-then, 2k which is even.
-by contraposition, if n squared is odd, then n is also odd.
-
-
-
+assume n^2 is odd, then n is even
+then, (2n+1)^2 -> (2n)
+however, (2n +1)^2 = (4n^2 + 4n + 1)
+then = 2(2n^2 + 2n) + 1
+let k be the integer 2n^2 + 2n
+then 2k + 1, which is odd
+by contraction, n^2 is odd -> n is odd
