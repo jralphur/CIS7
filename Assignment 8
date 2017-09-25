@@ -1,0 +1,52 @@
+# prove that 1 + 5 + 9 + ... + (4n - 3) = n(2n - 1)
+first step: prove P(1) is true:
+P(1) = 4(1) - 3 = (1)(2(1) - 1)
+     = 1 = 1 = true
+
+Assume P(k) = 1 + 5 + 9 + ... + (4k - 3) = k(2k - 1) is true
+Proving P(k + 1):
+    = 1 + 5 + 9 + ... + (4(k + 1) - 3) = (k + 1)(2(k + 1) - 1)
+    = k(2k - 1) + 4(k + 1) - 3)
+    = 2k - k + 4k + 1
+    = 2k^2 + 3k + 1
+    = (2k + 1)(k + 1)
+    = true
+
+# prove that for n >= 0, n^3 + 2n % 3 == 0
+prove P(1) is true:
+P(1) = 1^3 + 2(1) = 3
+     3 % 3 = 0; therefore true
+
+Assume P(k) is true: k^3 + 2k = 3m
+Proving P(k + 1):
+    = (k + 1)^3 + 2(K + 1)
+    = k^3 + 3k^2 + 3k + 1 + 2k + 2
+    = k^3 + 2k + 3k^2 + 3k + 3
+    = 3m + 3k^3 + 3k + 3
+    = 3(m + k^3 + k + 1)
+    let m + k^3 + k + 1 be integer a
+    = 3a
+    true
+
+# prove that for n >= 1 9^n - 1 % 8 == 0
+prove P(1) is true:
+    P(1) = 9^1 - 1
+         = 9 - 1
+         = 8
+         8 % 8 == 0 == true
+
+Assume P(k) is true:
+       P(k) = 9^k - 1 = 8m
+       P(k) = 9^k = 8m + 1
+
+Proving P(k + 1):
+      = 9^(k + 1) - 1
+      = 9(9k) - 1
+      = 9(8m + 1) - 1
+      = 72m + 9 - 1
+      = 72m + 8
+      = 8(9m + 1)
+      let 9m + 1 = integer a
+      = 8a
+      = true
+
