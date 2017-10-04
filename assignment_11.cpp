@@ -21,9 +21,10 @@ gcd(int x, int y)
 int
 gcd_euclid(int x, int y)
 {
-    if (y % x == 0)
+    if (y == 0)
         return x;
-    return gcd(gcd(x,y), x);
+    
+    return gcd_euclid(y, x % y);
 }
 
 int
