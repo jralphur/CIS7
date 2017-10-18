@@ -17,9 +17,9 @@ echo_stack(void)
 
 
 int
-call_return(int (*fp)(int), int arg)
+call_return(int (*fp)(int), int arg, const std::string name)
 {
-    call_stack.push_back({__FUNCTION__, arg});
+    call_stack.push_back({name, arg});
     echo_stack();
     int i = fp(arg);
     call_stack.pop_back();
@@ -36,7 +36,7 @@ factorial(int n)
         return 1;
     }
 
-    return n * call_return(factorial, n - 1);
+    return n * call_return(factorial, n - 1, "factorial");
 }
 
 int
@@ -46,15 +46,15 @@ fibonacci(int n)
         return 1;
     }
 
-    return call_return(fibonacci, n - 1) + call_return(fibonacci, n - 2);
+    return call_return(fibonacci, n - 1, "fibonacci") + call_return(fibonacci, n - 2, "fibonacci");
 }
 
 int
 main(void)
 {
-    int fact = call_return(factorial, 3);
+    int fact = call_return(factorial, 3, "factorial");
     call_stack.clear();
-    int fib = call_return(fibonacci, 5);;
+    int fib = call_return(fibonacci, 5, "fibonacci");
     call_stack.clear();
     std::cout << fact << '\t' << fib << std::endl;
 
