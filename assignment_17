@@ -31,7 +31,7 @@ isolated_nodes(void)
 bool
 graph_complete(void)
 {
-	/* ugly */
+	/* ugly and stinky */
 	for (const auto &n : vertices) {
 		std::vector<int> is;
 		for (const auto n2 : n.other)
