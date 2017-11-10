@@ -19,13 +19,13 @@ int max_degree_index = 0;
 std::vector<Node>
 isolated_nodes(void)
 {
-	std::vector<Node> ret;
-	for (const auto &n : vertices) {
-		if (n.other.size() == 0) {
-			ret.push_back(Node(n.i));
-		}
-	}
-	return ret;
+    std::vector<Node> ret;
+    for (const auto &n : vertices) {
+        if (n.other.size() == 0) {
+            ret.push_back(Node(n.i));
+        }
+    }
+    return ret;
 }
 
 bool
@@ -67,7 +67,7 @@ main(void)
 			std::cout << p->i << ' ';
 		std::cout << std::endl;
 		std::cout << "Connected: " << (vertices.empty() ? "No" : isolated.empty() ? "Yes" : "No") << std::endl;
-		std::cout << "Complete: " << (vertices.empty() ? "No" : graph_complete() ? "Yes" : "No") << std::endl;
+		std::cout << "Complete: " << (vertices.size() <= 1 ? "No" : graph_complete() ? "Yes" : "No") << std::endl;
 		std::cout << std::endl;
 		std::cout << "A) Add a vertice:" << std::endl;
 		std::cout << "B) Add an arc: " << std::endl;
@@ -83,7 +83,7 @@ main(void)
 				break;
 			std::cout << "From point? " << std::endl;
 			std::cin >> i;
-			if (i < vertices.size())
+		if (i < vertices.size())
 				beg = vertices.begin() + i;
 			else
 				break;
