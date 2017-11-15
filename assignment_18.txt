@@ -15,7 +15,7 @@ Question 1, 2, 5, 9, 13, 30, 49,
     f) remove a5
     g) a1
 
-#5: see supplementary pdf
+#5: see supplementary png
 
 #9: a) there is no solid acquaintanceship betweenn the IT department and the
     marketing department; they are possibly unrelated
@@ -39,7 +39,7 @@ Question 1, 2, 5, 9, 13, 30, 49,
 
 #51: adjacency matrix is all 1s, except for the diagonals, which is all zero.
 
-#65: see supplementary pdf
+#65: see supplementary png
 
-#71: see supplementary pdf
+#71: see supplementary png
 
